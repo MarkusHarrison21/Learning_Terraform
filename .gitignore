@@ -1,0 +1,30 @@
+# Local provider plugins and cache
+.terraform/
+
+# State files can contain secrets
+*.tfstate
+*.tfstate.*
+
+# Plan files and crash logs
+*.tfplan
+crash.log
+crash.*.log
+
+# Variable files often hold secrets
+*.tfvars
+*.tfvars.json
+
+# Local override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# CLI configuration
+.terraformrc
+terraform.rc
+
+# SSH and TLS keys
+*.pem
+*.key
+id_ed25519*
